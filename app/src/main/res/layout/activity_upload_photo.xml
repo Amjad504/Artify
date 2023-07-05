@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Upload_Photo">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/upload_bg"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/uploaded_image"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next"
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:visibility="gone"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="30sp">
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/upload_photo"
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg"
+            android:text="Upload Photo"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
